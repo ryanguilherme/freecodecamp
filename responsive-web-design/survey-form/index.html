@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <title>Survey Form</title>
+  <meta charset='UTF-8'>
+  <link rel='stylesheet' href='styles.css'>
+  <header>
+    <h1 id='title'>freeCodeCamp Survey Form</h1>
+    <p id='description'>Thank you for taking the time to help us improve the platform
+</p>
+  </header>
+  <body>
+    <form id='survey-form'>
+      <fieldset>
+        <label for='name' id='name-label'><p>Name</p><input required id='name' name='name' type='text' placeholder='Enter your name'/></label>
+        
+        <label for='email' id='email-label'><p>Email</p><input required id='email' name='email' type='email' placeholder='Enter your email'/></label>
+        
+        <label for='number' id='number-label'><p>Age<small>(optional)</small></p><input type='number' name='number' id='number' min='13' max='120' placeholder='Age'/></label>
+        <p>Which option best describes your current role?</p>
+      <label for='dropdown'>
+        <select id='dropdown' name='dropdown'>
+          <option value='' disabled>Select current role</option>
+          <option value='1'>Student</option>
+          <option value='2'>Full Time Job</option>
+          <option value='3'>Full Time Learner</option>
+          <option value='4'>Prefer not to say</option>
+          <option value='5'>Other</option>
+        </select>
+      </label>
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <label for='recommend'>
+        <p class='recommend-p'>
+        <input value='1' checked type='radio' name='recommend' id='definitely-recommend'> Definitely</p>
+        <p class='recommend-p'>
+        <input value='2' type='radio' name='recommend' id='maybe-recommend'> Maybe</p>
+        <p class='recommend-p'>
+        <input value='3' type='radio' name='recommend' id='notsure-recommend'> Not sure</p>
+      </label>
+        <p>What would you like to se improved? <small>(Check all that apply)</p>
+        <label for='liketosee-frontend'>
+            <input value='1' type='checkbox' name='liketosee-frontend' id='liketosee-frontend'>
+          Front-end Projects
+        </label>
+        <label for='liketosee-backend'>
+            <input value='2' type='checkbox' name='liketosee-backend' id='liketosee-backend'> Back-end Projects
+        </label>
+        <label for='liketosee-data'>
+            <input value='3' type='checkbox' name='liketosee-data' id='liketoseedata'>
+          Data Visualization
+        </label>
+        <label for='liketosee-challenges'>
+            <input value='4' type='checkbox' name='liketosee-challenges' id='liketosee-challenges'>
+          Challenges
+        </label>
+        <label for='liketosee-community'>
+            <input value='5' type='checkbox' name='liketosee-community' id='liketosee-community'>
+          Open Source Community
+        </label>
+        <label for='liketosee-gitterhelp'>
+            <input value='6' type='checkbox' name='liketosee-gitterhelp' id='liketosee-gitterhelp'>
+          Gitter help rooms
+        </label>
+        <label for='liketosee-videos'>
+            <input value='7' type='checkbox' name='liketosee-videos' id='liketosee-videos'>
+          Videos
+        </label>
+        <label for='liketosee-citymeetups'>
+            <input value='8' type='checkbox' name='liketosee-citymeetups' id='liketosee-citymeetups'>
+          City Meetups
+        </label>
+        <label for='liketosee-wiki'>
+            <input value='9' type='checkbox' name='liketosee-wiki' id='liketosee-wiki'>
+          Wiki
+        </label>
+        <label for='liketosee-forum'>
+            <input value='10' type='checkbox' name='liketosee-forum' id='liketosee-forum'>
+          Forum
+        </label>
+        <label for='liketosee-courses'>
+            <input value='11' type='checkbox' name='liketosee-courses' id='liketosee-courses'>
+          Additional Courses
+        </label>
+      
+        <p>Any comments or suggestions?</p>
+          <textarea name='comment' id='comment' type='textarea' placeholder='Enter your comment here...'></textarea>
+      
+      <input id='submit' type='submit' value='Submit' />
+      </fieldset>
+    </form>
+  <body>
+</html>
